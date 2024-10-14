@@ -1,0 +1,43 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:roboto slab;
+}
+.sidebar{
+	width:200px;
+	height:100%;
+	background:#0074D3;
+	position:fixed;
+	left:-200px;
+	transition:all 300ms linear;
+}
+.active{
+	left:0px;
+}
+.sidebar ul li{
+	list-style:none;
+	padding:10px 15px;
+	border-bottom:1px solid rgba(100,100,100,0.9);
+	
+}
+.sidebar ul li a{
+	color:#fff;
+	text-decoration:none;
+	display:block;	
+}
+
+.sidebar .sidebar-btn{
+	position:absolute;
+	left:230px;
+	top:20px;
+}
+.sidebar .sidebar-btn span{
+	display:block;
+	width:30px;
+	height:5px;
+	background:#151719;
+	margin:5px 0px;
+}
+

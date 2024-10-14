@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Sidebar Menu Design</title>
+	<link rel="stylesheet" href="sidebar_design.css" />
+	<script type="text/javascript" src="jquery-3.2.1.js"></script>
+</head>
+<body>
+	<div class="menu-icon">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<div class="sidebar">
+		<a href=""><img src="user_3.png" alt="" /></a>
+		<ul class="menu">
+			<li><a href="">Home</a></li>
+			<li><a href="">Service</a></li>
+			<li><a href="">Photo Gallery</a></li>
+			<li><a href="">Registration</a></li>
+			<li><a href="">Notice</a></li>
+			<li><a href="">Contact Us</a></li>
+		</ul>
+	</div>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".menu-icon").click(function(){
+				$(".menu-icon").toggleClass("active")
+			})
+			
+			$(".menu-icon").click(function(){
+				$(".sidebar").toggleClass("active")
+			})
+		
+		})
+	
+	</script>
+</body>
+</html>
