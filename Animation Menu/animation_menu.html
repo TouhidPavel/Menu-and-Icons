@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>Animation_Menu</title>
+<style type="text/css">
+	body{
+		margin:0;
+		padding:0;
+		background:skyblue;
+		font-family:Roboto Slab;
+		}
+	.nav{
+		width:100%;
+		background:#242e31;
+	}
+	a{
+		padding:25px 20px;
+		width:150px;
+		display:block;
+		display:inline-block;
+		text-align:center;
+		font-size:15px;
+		text-decoration:none;
+		color:#fff;
+		font-weight:bold;
+		text-transform:uppercase;
+		position:relative;
+		animation:my_ani 5s 3;
+		-moz-animation:my_ani 5s 3;
+		-webkit-animation:my_ani 5s 3;
+	}
+	a:hover{
+		background:orange;
+	}
+	@keyframes my_ani{
+		from{
+			left:0%;
+		}
+		to{
+			left:25%;
+		}
+	}
+	@-moz-keyframes my_ani{
+		from{
+			left:0%;
+		}
+		to{
+			left:25%;
+		}
+	}
+</style>
+</head>
+<body>
+	<div class="nav">
+		<a href="#">Home</a>
+		<a href="#">Service</a>
+		<a href="#">Photo Gallery</a>
+		<a href="#">Notice</a>
+		<a href="#">Others</a>
+	</div>
+	
+</body>
+</html>
